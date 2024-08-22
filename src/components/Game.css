@@ -1,0 +1,110 @@
+/* Base styles for full height and reset margin */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Updated font family for a modern look */
+  background: linear-gradient(135deg, #1c92d2, #f2fcfe); /* Cool gradient background */
+  color: #333; /* Dark text color for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 90%;
+  max-width: 500px; /* Set max width for better responsiveness */
+  text-align: center; 
+  background: #fff; /* White background for the container */
+  border-radius: 12px; /* Rounded corners */
+  padding: 30px; /* Updated padding */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.container:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Header styling */
+h1 {
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 25px; /* Increased margin for spacing */
+  color: #1c92d2; /* Gradient-like blue color */
+  letter-spacing: 2px; /* Increased letter spacing */
+  text-transform: uppercase;
+}
+
+/* Styling for buttons */
+button {
+  margin: 10px 0; /* Even spacing for buttons */
+  padding: 12px 30px; /* More padding for a bolder look */
+  font-size: 1.125rem; /* Increased font size */
+  background-color: #1c92d2; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 50px; /* Rounded pill-shaped buttons */
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #0f78a3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Reset effect on click */
+}
+
+/* Content area styling */
+.content {
+  color: #555; /* Darker text color */
+  font-size: 1.125rem;
+  font-weight: 500; /* Semi-bold text */
+  line-height: 1.5; /* Increased line height for better readability */
+  margin-bottom: 20px; /* Space below the content */
+}
+
+/* Styling for choice buttons if needed */
+.choice-button {
+  margin: 15px 0;
+  padding: 15px 35px; /* Increased padding for emphasis */
+  font-size: 1.125rem;
+  background-color: #1c92d2;
+  color: white;
+  border: none;
+  border-radius: 30px; /* Pill-shaped buttons */
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+.choice-button:hover {
+  background-color: #0f78a3;
+  transform: translateY(-3px);
+}
+
+.choice-button:active {
+  transform: translateY(0);
+}
+
+/* Result section styling */
+.result {
+  margin-top: 30px; /* Increased margin for spacing */
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  color: #ff7043; /* Bright orange color for results */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1.5px; /* Increased letter spacing */
+}
+
+/* Additional styling for smooth transitions and effects */
+* {
+  transition: all 0.3s ease;
+}
